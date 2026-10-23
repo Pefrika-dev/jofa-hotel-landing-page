@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOTEL JOFA — Comfort, Elegance & Genuine African Hospitality | Migori, Kenya</title>
+  <meta name="description" content="Hotel Jofa — comfortable accommodation, dining, swimming pool and events along the Migori–Sirare Highway in Migori County, Kenya." />
+  <meta property="og:title" content="HOTEL JOFA — Migori, Kenya" />
+  <meta property="og:description" content="Comfortable accommodation, delicious dining and welcoming hospitality along the Migori–Sirare Highway." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_KE" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1f3a'/%3E%3Ctext x='32' y='42' font-size='26' text-anchor='middle' fill='%23d4af37' font-family='serif' font-weight='700'%3EHJ%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo" aria-label="Hotel Jofa home">
+        <span class="logo-mark">HJ</span>
+        <span class="logo-text">HOTEL JOFA</span>
+      </a>
+      <nav class="nav" id="mainNav" aria-label="Primary">
+        <a href="#home" data-i18n="nav.home">Home</a>
+        <a href="#rooms" data-i18n="nav.rooms">Rooms &amp; Rates</a>
+        <a href="#facilities" data-i18n="nav.facilities">Facilities</a>
+        <a href="#restaurant" data-i18n="nav.restaurant">Restaurant</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#about" data-i18n="nav.about">About Us</a>
+        <a href="#events" data-i18n="nav.events">Events</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="sw">SW</button>
+        </div>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i data-lucide="sun" class="icon-sun"></i>
+          <i data-lucide="moon" class="icon-moon"></i>
+        </button>
+        <a href="#booking" class="btn btn-primary btn-sm" data-i18n="nav.book">Book a Room</a>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#rooms" data-i18n="nav.rooms">Rooms &amp; Rates</a>
+      <a href="#facilities" data-i18n="nav.facilities">Facilities</a>
+      <a href="#restaurant" data-i18n="nav.restaurant">Restaurant</a>
+      <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#about" data-i18n="nav.about">About Us</a>
+      <a href="#events" data-i18n="nav.events">Events</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a href="#booking" class="btn btn-primary" data-i18n="nav.book">Book a Room</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow" data-i18n="hero.eyebrow">WELCOME TO HOTEL JOFA</p>
+      <h1 data-i18n="hero.title">Comfort, Elegance &amp; Genuine African Hospitality.</h1>
+      <p class="hero-text" data-i18n="hero.text">Discover comfortable accommodation, delicious dining, and welcoming hospitality along the Migori–Sirare Highway in Migori, Kenya.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn btn-primary" data-i18n="hero.primary">BOOK YOUR STAY</a>
+        <a href="#rooms" class="btn btn-ghost" data-i18n="hero.secondary">EXPLORE OUR ROOMS</a>
+      </div>
+      <p class="hero-loc">📍 <span data-i18n="hero.location">Migori County, Kenya</span></p>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING ============ -->
+  <section class="section booking-section" id="booking">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="booking.title">Check Availability &amp; Request a Booking</h2>
+        <p class="section-sub" data-i18n="booking.note">Demo inquiry only — not a real-time reservation. Room availability is not verified and no payment is taken.</p>
+      </div>
+      <form class="booking-form card" id="bookingForm" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="bkCheckin" data-i18n="booking.checkin">Check-in date</label>
+            <input type="date" id="bkCheckin" required />
+          </div>
+          <div class="form-field">
+            <label for="bkCheckout" data-i18n="booking.checkout">Check-out date</label>
+            <input type="date" id="bkCheckout" required />
+          </div>
+          <div class="form-field">
+            <label for="bkGuests" data-i18n="booking.guests">Number of guests</label>
+            <input type="number" id="bkGuests" min="1" max="10" value="1" required />
+          </div>
+          <div class="form-field">
+            <label for="bkRoom" data-i18n="booking.room">Room type</label>
+            <select id="bkRoom" required></select>
+          </div>
+          <div class="form-field">
+            <label for="bkName" data-i18n="booking.name">Guest full name</label>
+            <input type="text" id="bkName" required />
+          </div>
+          <div class="form-field">
+            <label for="bkPhone" data-i18n="booking.phone">Phone number</label>
+            <input type="tel" id="bkPhone" required />
+          </div>
+          <div class="form-field">
+            <label for="bkEmail" data-i18n="booking.email">Email address</label>
+            <input type="email" id="bkEmail" required />
+          </div>
+          <div class="form-field full">
+            <label for="bkRequests" data-i18n="booking.requests">Special requests</label>
+            <textarea id="bkRequests" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="price-box" id="priceBox">
+          <div class="price-row"><span data-i18n="booking.nights">Nights</span><span id="bkNights">0</span></div>
+          <div class="price-row"><span data-i18n="booking.estimated">Estimated total</span><span id="bkTotal">KES 0</span></div>
+          <small id="bkBreakdown" data-i18n="booking.breakdown">Price breakdown</small>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" data-i18n="booking.submit">Submit Booking Inquiry</button>
+        </div>
+        <p class="form-error" id="bkError" role="alert"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ ROOMS ============ -->
+  <section class="section" id="rooms">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="rooms.title">Rooms &amp; Rates</h2>
+        <p class="section-sub" data-i18n="rooms.subtitle">Comfortable, affordable accommodation along the Migori–Sirare Highway.</p>
+      </div>
+      <div class="cards-grid" id="roomsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ FACILITIES ============ -->
+  <section class="section section-alt" id="facilities">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="fac.title">Facilities</h2>
+        <p class="section-sub" data-i18n="fac.subtitle">Everything you need for a comfortable stay.</p>
+      </div>
+      <div class="cards-grid facilities-grid" id="facilitiesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ RESTAURANT ============ -->
+  <section class="section" id="restaurant">
+    <div class="container two-col">
+      <div class="col-text">
+        <h2 data-i18n="rest.title">A Taste of Hospitality</h2>
+        <p data-i18n="rest.text">Enjoy a variety of meals and drinks in a welcoming hotel environment.</p>
+        <ul class="menu-cats" id="menuCats"></ul>
+        <button type="button" class="btn btn-primary" id="viewMenuBtn" data-i18n="rest.view">View Dining Options</button>
+      </div>
+      <div class="col-img">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Restaurant dining (illustrative)" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="gallery.title">Gallery</h2>
+        <p class="section-sub" data-i18n="gallery.note">Images are illustrative stock photography until the hotel supplies its own photos.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container two-col">
+      <div class="col-img">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" alt="Hotel building (illustrative)" loading="lazy" />
+      </div>
+      <div class="col-text">
+        <h2 data-i18n="about.title">About Hotel Jofa</h2>
+        <p data-i18n="about.p1">Hotel Jofa is located along the Migori–Sirare Highway in Migori County, Kenya. It serves local residents, business travellers, families, and travellers moving between Kenya and Tanzania.</p>
+        <p data-i18n="about.p2">The hotel provides accommodation and hospitality services in a peaceful setting outside the busy town centre. It is suitable for accommodation, conferences, weddings, and family functions. The hotel opened in March 2020.</p>
+        <a class="btn btn-outline" id="mapBtn" target="_blank" rel="noopener" data-i18n="about.map">View on Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS ============ -->
+  <section class="section section-alt" id="events">
+    <div class="container two-col">
+      <div class="col-text">
+        <h2 data-i18n="events.title">Events &amp; Functions</h2>
+        <p data-i18n="events.text">Host conferences, weddings, family functions, and business gatherings at Hotel Jofa.</p>
+        <button type="button" class="btn btn-primary" id="eventQuoteBtn" data-i18n="events.quote">Request an Event Quote</button>
+      </div>
+      <div class="col-img">
+        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=80" alt="Events (illustrative)" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE ============ -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="why.title">Why Choose Hotel Jofa</h2>
+      </div>
+      <div class="why-grid" id="whyGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section-alt" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="test.title">Guest Experiences</h2>
+        <p class="section-sub" data-i18n="test.note">Demonstration preview — real testimonials will be added after verification. No fictional reviews are presented as genuine.</p>
+      </div>
+      <div class="cards-grid" id="testimonialsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ NEWS ============ -->
+  <section class="section" id="news">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="news.title">News &amp; Updates</h2>
+        <p class="section-sub" data-i18n="news.note">Demonstration content — requires approval before publication.</p>
+      </div>
+      <div class="cards-grid" id="newsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-wrap">
+      <div class="contact-info">
+        <h2 data-i18n="contact.title">Contact Us</h2>
+        <div class="contact-card">
+          <p><strong>Hotel Jofa</strong><br /><span id="ciAddress"></span></p>
+          <p>📞 <a id="ciPhone" href="#"></a></p>
+          <p>✉️ <a id="ciEmail" href="#"></a></p>
+          <p>🌐 <span id="ciWebsite"></span></p>
+          <div class="socials">
+            <a id="ciFb" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+            <a id="ciIg" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+            <a id="ciWa" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+          </div>
+          <a class="btn btn-outline" id="ciMap" target="_blank" rel="noopener" data-i18n="contact.map">Google Maps Search</a>
+        </div>
+      </div>
+      <form class="contact-form card" id="contactForm" novalidate>
+        <div class="form-field"><label for="ctName" data-i18n="contact.name">Name</label><input type="text" id="ctName" required /></div>
+        <div class="form-field"><label for="ctEmail" data-i18n="contact.email">Email</label><input type="email" id="ctEmail" required /></div>
+        <div class="form-field"><label for="ctPhone" data-i18n="contact.phone">Phone</label><input type="tel" id="ctPhone" /></div>
+        <div class="form-field"><label for="ctSubject" data-i18n="contact.subject">Subject</label><input type="text" id="ctSubject" /></div>
+        <div class="form-field full"><label for="ctMessage" data-i18n="contact.message">Message</label><textarea id="ctMessage" rows="4" required></textarea></div>
+        <button type="submit" class="btn btn-primary" data-i18n="contact.send">Send Message</button>
+        <p class="form-error" id="ctError" role="alert"></p>
+        <p class="form-success" id="ctSuccess"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-mark">HJ</span>
+        <span class="logo-text">HOTEL JOFA</span>
+      </div>
+      <p class="footer-tagline" data-i18n="footer.tagline">Comfort, elegance and genuine African hospitality in Migori, Kenya.</p>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <p class="footer-credit">
+        <span data-i18n="footer.dev">Developed by</span>
+        <strong>Thomas Hondo Chacha</strong>
+        <span class="credit-role" data-i18n="footer.role">Software Engineer</span>
+      </p>
+      <p class="footer-rights" data-i18n="footer.rights">© 2026 Hotel Jofa. All rights reserved.</p>
+      <p class="demo-note" data-i18n="footer.demo">Frontend demonstration. Real bookings, availability, and payments require a secure backend and database.</p>
+    </div>
+  </footer>
+
+  <!-- ============ MODALS ============ -->
+  <div class="modal" id="roomModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <div id="roomModalBody"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="menuModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <h3 data-i18n="rest.view">View Dining Options</h3>
+      <div id="menuModalBody"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="eventModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <h3 data-i18n="events.quote">Request an Event Quote</h3>
+      <form id="eventForm" novalidate>
+        <div class="form-grid">
+          <div class="form-field"><label for="evName" data-i18n="events.name">Name</label><input type="text" id="evName" required /></div>
+          <div class="form-field"><label for="evPhone" data-i18n="events.phone">Phone</label><input type="tel" id="evPhone" required /></div>
+          <div class="form-field"><label for="evEmail" data-i18n="events.email">Email</label><input type="email" id="evEmail" required /></div>
+          <div class="form-field"><label for="evType" data-i18n="events.type">Event type</label>
+            <select id="evType" required>
+              <option value="">—</option>
+              <option>Conference</option>
+              <option>Wedding</option>
+              <option>Family function</option>
+              <option>Business gathering</option>
+              <option>Group accommodation</option>
+            </select>
+          </div>
+          <div class="form-field"><label for="evDate" data-i18n="events.date">Proposed date</label><input type="date" id="evDate" required /></div>
+          <div class="form-field"><label for="evAttendees" data-i18n="events.attendees">Estimated attendees</label><input type="number" id="evAttendees" min="1" required /></div>
+          <div class="form-field full"><label for="evReq" data-i18n="events.req">Additional requirements</label><textarea id="evReq" rows="3"></textarea></div>
+        </div>
+        <button type="submit" class="btn btn-primary" data-i18n="events.quote">Request an Event Quote</button>
+        <p class="form-error" id="evError" role="alert"></p>
+        <p class="form-success" id="evSuccess"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" data-close aria-label="Close">×</button>
+    <button class="lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+    <img id="lbImg" src="" alt="" />
+    <button class="lb-next" id="lbNext" aria-label="Next">›</button>
+    <p class="lb-caption" id="lbCaption"></p>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <a class="whatsapp-float" id="waFloat" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
