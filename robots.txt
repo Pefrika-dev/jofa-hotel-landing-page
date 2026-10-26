@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Demo admin dashboard — frontend-only auth, not for public indexing
+Disallow: /admin/
+
+Sitemap: https://jofa-hotel.vercel.app/sitemap.xml
