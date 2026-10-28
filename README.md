@@ -1,11 +1,9 @@
-# HOTEL JOFA — Website & Admin Dashboard (Demo)
+# HOTEL JOFA — Website & Admin Dashboard
 
-Premium frontend demonstration for HOTEL JOFA, Migori, Kenya.
+Premium business website for HOTEL JOFA, Migori, Kenya. Built with clean, modern frontend code and a lightweight admin panel for managing content with ease.
 
 ## Overview
-A production-style, multi-page frontend for Hotel Jofa: public landing page plus a
-separate admin dashboard. All data persists in the browser via `localStorage`.
-This is a **frontend demonstration** — not a real booking or payment system.
+A fully responsive, multi-page website for Hotel Jofa featuring a public landing page and a dedicated admin dashboard. Content is managed through an intuitive admin panel with data stored in the browser via `localStorage` for this deployment. Designed and developed by **Thomas Hondo Chacha – Software Engineer**.
 
 ## Project Structure
 ```
