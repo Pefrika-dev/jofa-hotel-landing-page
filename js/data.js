@@ -211,9 +211,17 @@
     if (changed) set(K.settings, s);
   }
 
+  function migrateGallery() {
+    const g = get(K.gallery, []);
+    if (Array.isArray(g) && g.length && (g[0].caption || '').indexOf('illustrative') !== -1) {
+      set(K.gallery, DEFAULT_GALLERY);
+    }
+  }
+
   function seed() {
     if (localStorage.getItem(K.seeded) === "1") {
       migrateSettings();
+      migrateGallery();
       return;
     }
     set(K.theme, "light");
