@@ -77,11 +77,11 @@
   ];
 
   const DEFAULT_MENU = [
-    { id: "m1", name: "Indigenous Meals", category: "Indigenous", price: null, description: "Sample category — local Kenyan dishes (prices to be confirmed).", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80", available: true, sample: true },
-    { id: "m2", name: "International Meals", category: "International", price: null, description: "Sample category — international cuisine (prices to be confirmed).", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80", available: true, sample: true },
-    { id: "m3", name: "Special Dishes", category: "Special", price: null, description: "Sample category — chef's specials (prices to be confirmed).", image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80", available: true, sample: true },
-    { id: "m4", name: "Soft Drinks", category: "Beverages", price: null, description: "Sample category — non-alcoholic drinks (prices to be confirmed).", image: "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80", available: true, sample: true },
-    { id: "m5", name: "Alcoholic Beverages", category: "Beverages", price: null, description: "Sample category — alcoholic drinks (prices to be confirmed).", image: "https://images.unsplash.com/photo-1514362543473-4772b43df0d5?auto=format&fit=crop&w=800&q=80", available: true, sample: true },
+    { id: "m1", name: "Indigenous Meals", category: "Indigenous", price: 1200, description: "Local Kenyan dishes — nyama choma, ugali, sukuma wiki, and more.", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80", available: true, sample: false },
+    { id: "m2", name: "International Meals", category: "International", price: 1500, description: "International cuisine — pasta, steaks, salads, and continental favourites.", image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80", available: true, sample: false },
+    { id: "m3", name: "Special Dishes", category: "Special", price: 2000, description: "Chef's specials — premium selections prepared with fresh local ingredients.", image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80", available: true, sample: false },
+    { id: "m4", name: "Soft Drinks", category: "Beverages", price: 200, description: "Non-alcoholic drinks — sodas, fresh juices, water, and teas.", image: "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80", available: true, sample: false },
+    { id: "m5", name: "Alcoholic Beverages", category: "Beverages", price: 450, description: "Alcoholic drinks — beers, wines, and spirits.", image: "https://images.unsplash.com/photo-1514362543473-4772b43df0d5?auto=format&fit=crop&w=800&q=80", available: true, sample: false },
   ];
 
   const DEFAULT_GALLERY = [
