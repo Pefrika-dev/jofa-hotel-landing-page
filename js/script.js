@@ -128,7 +128,7 @@
       const card = document.createElement("div");
       card.className = "room-card";
       card.innerHTML = `
-        <img src="${r.image}" alt="${r.name} (illustrative)" loading="lazy" onerror="this.style.background='var(--bg-alt)'" />
+        <img src="${r.image || r.url}" alt="${r.name || r.caption || r.caption || 'Gallery image'}" loading="lazy" onerror="this.style.background='var(--bg-alt)'" />
         <div class="room-body">
           <h3 class="room-name">${r.name}</h3>
           <div class="room-price">KES ${r.price.toLocaleString()} <span style="font-weight:400;font-size:13px;color:var(--text-muted)">/ ${Jofa.t("rooms.perNight")}</span></div>

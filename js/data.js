@@ -85,14 +85,14 @@
   ];
 
   const DEFAULT_GALLERY = [
-    { id: "g1", url: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=80", caption: "Guest room (illustrative)", captionSw: "Chumba cha wageni (mfano)" },
-    { id: "g2", url: "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=900&q=80", caption: "Swimming pool (illustrative)", captionSw: "Bwawa la kuogelea (mfano)" },
-    { id: "g3", url: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80", caption: "Restaurant (illustrative)", captionSw: "Mkahawa (mfano)" },
-    { id: "g4", url: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80", caption: "Dining (illustrative)", captionSw: "Chakula (mfano)" },
-    { id: "g5", url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80", caption: "Hotel exterior (illustrative)", captionSw: "Nje ya hoteli (mfano)" },
-    { id: "g6", url: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80", caption: "Events & conferences (illustrative)", captionSw: "Matukio na mikutano (mfano)" },
-    { id: "g7", url: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80", caption: "Outdoor seating (illustrative)", captionSw: "Viti vya nje (mfano)" },
-    { id: "g8", url: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80", caption: "Bedroom (illustrative)", captionSw: "Chumba cha kulala (mfano)" },
+    { id: "g1", url: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=80", caption: "Guest room", captionSw: "Chumba cha wageni" },
+    { id: "g2", url: "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=900&q=80", caption: "Swimming pool", captionSw: "Bwawa la kuogelea" },
+    { id: "g3", url: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80", caption: "Restaurant", captionSw: "Mkahawa" },
+    { id: "g4", url: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80", caption: "Dining", captionSw: "Chakula" },
+    { id: "g5", url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80", caption: "Hotel exterior", captionSw: "Nje ya hoteli" },
+    { id: "g6", url: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80", caption: "Events & conferences", captionSw: "Matukio na mikutano" },
+    { id: "g7", url: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80", caption: "Outdoor seating", captionSw: "Viti vya nje" },
+    { id: "g8", url: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80", caption: "Bedroom", captionSw: "Chumba cha kulala" },
   ];
 
   const DEFAULT_NEWS = [
@@ -317,7 +317,7 @@
       "rest.text": "Enjoy a variety of meals and drinks in a welcoming hotel environment.",
       "rest.view": "View Dining Options",
       "gallery.title": "Gallery",
-      "gallery.note": "Images are illustrative stock photography until the hotel supplies its own photos.",
+      "gallery.note": "Beautiful photos of the hotel — more coming soon.",
       "events.title": "Events & Functions",
       "events.text": "Host conferences, weddings, family functions, and business gatherings at Hotel Jofa.",
       "events.quote": "Request an Event Quote",
