@@ -349,6 +349,49 @@ html[data-theme="dark"] .back-to-top { color: #0a1220; }
 }
 .cta-banner p { margin: 0; color: rgba(255,255,255,.8); }
 
+/* ---------- FAQ ---------- */
+.faq-list { display: flex; flex-direction: column; gap: 14px; max-width: 980px; margin: 0 auto; }
+.faq-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 24px;
+  font-weight: 600;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  font-size: 18px;
+  color: var(--gold);
+  transition: transform .25s ease;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-content { padding: 0 24px 20px; color: var(--text-muted); }
+.faq-content p { margin: 0; }
+
+/* ---------- Map ---------- */
+.map-card {
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+}
+.map-card iframe {
+  width: 100%;
+  height: min(460px, 70vw);
+  border: 0;
+  display: block;
+}
+.map-actions { display: flex; justify-content: center; margin-top: 18px; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .nav { display: none; }
@@ -361,6 +404,8 @@ html[data-theme="dark"] .back-to-top { color: #0a1220; }
   .hero { min-height: 78vh; }
   .section { padding: 56px 0; }
   .cta-banner-inner { flex-direction: column; text-align: center; }
+  .faq-item summary { padding: 16px 18px; }
+  .faq-content { padding: 0 18px 18px; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
