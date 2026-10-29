@@ -456,7 +456,7 @@
         Jofa.get(K.menu, []).filter((m) => m.category === c && m.available !== false).forEach((m) => {
           const row = document.createElement("div");
           row.style.cssText = "display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);";
-          const price = m.price ? `KES ${m.price.toLocaleString()}` : "Price on request (demo)";
+          const price = m.price ? `KES ${m.price.toLocaleString()}` : "Price on request";
           row.innerHTML = `<img src="${m.image}" alt="${m.name}" style="width:64px;height:64px;object-fit:cover;border-radius:8px;" onerror="this.style.background='var(--bg-alt)'" /><div><strong>${lang() === "sw" ? (m.nameSw || m.name) : m.name}</strong><div style="font-size:12px;color:var(--text-muted)">${m.description || ""}</div><div style="color:var(--gold);font-weight:600;font-size:13px;">${price}</div></div>`;
           body.appendChild(row);
         });
