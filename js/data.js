@@ -348,6 +348,8 @@
       "contact.success": "Your message has been received. (Demo only — no email was sent.)",
       "footer.rights": "© 2026 Hotel Jofa. All rights reserved.",
       "footer.demo": "Designed for reliability, speed and a premium guest experience.",
+      "footer.author": "Designed & Developed by",
+      "footer.hire": "Available for hire",
       "admin.login": "Hotel Jofa Admin Panel",
       "admin.loginNote": "Enter your credentials to access the dashboard.",
       "admin.username": "Username",
