@@ -331,6 +331,24 @@ html[data-theme="dark"] .back-to-top { color: #0a1220; }
   .footer-credit-pro { justify-content: center; }
 }
 
+/* ---------- CTA Banner ---------- */
+.cta-banner {
+  background: linear-gradient(90deg, #0b1f3a 0%, #132a4d 100%);
+  color: #fff;
+  border-top: 1px solid rgba(212,175,55,.6);
+  border-bottom: 1px solid rgba(212,175,55,.6);
+}
+.cta-banner-inner {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  padding: 44px 20px;
+}
+.cta-banner h2 {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-size: clamp(26px, 4vw, 38px);
+}
+.cta-banner p { margin: 0; color: rgba(255,255,255,.8); }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .nav { display: none; }
@@ -342,6 +360,7 @@ html[data-theme="dark"] .back-to-top { color: #0a1220; }
   .form-grid { grid-template-columns: 1fr; }
   .hero { min-height: 78vh; }
   .section { padding: 56px 0; }
+  .cta-banner-inner { flex-direction: column; text-align: center; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
